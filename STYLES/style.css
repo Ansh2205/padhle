@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+
+body{
+    font-family: 'Golos Text', sans-serif;
+}
+.lgtxt{
+    font-family: 'Shantell Sans', cursive;
+}
+.clstxt{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 75px;
+    border: 2px solid #F9A826;
+}
+.clstxt2{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 15px;
+}
+.clstxt3{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 75px;
+    border: 2px solid gray;
+}
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+    transition: opacity 5s, visibility 4s;
+  }
+  
+  .loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .loader::after {
+    content: "";
+    width: 75px;
+    color: #fff;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: #F9A826;
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite;
+  }
+  
+  @keyframes loading {
+    from {
+      transform: rotate(0turn);
+    }
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  
